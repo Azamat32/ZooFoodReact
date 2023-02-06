@@ -1,32 +1,49 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
-
+import { useState,useEffect } from 'react'
+import 'normalize.css';
+import WebFont from 'webfontloader';
+import pig from '../src/components/assets/pig1.png'
+import imageLeft from '../src/components/assets/background.jpg'
+import imageRight from '../src/components/assets/backgroundRight.jpg'
+import Modal from './components/UI/modal/modal';
+import './App.scss'
+import Header from './components/UI/header/Header'
+import Intro from './components/intro/Intro';
+import SwiperComponent from './components/swiperComponent/Swiper';
+import Catalog from './components/catalog/Catalog';
+import Calculator from './components/calculator/Calculator';
 function App() {
-  const [count, setCount] = useState(0)
+  const [isOpen, setIsOpen] = useState(false);
 
+  const toggleModal = () => {
+    setIsOpen(!isOpen);
+  };
+
+  useEffect(() => {
+    WebFont.load({
+      google: {
+        families: ['Century Gothic', 'Montserrat']
+      }
+    });
+   }, []);
   return (
     <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="pig_banner">
+        <img src={pig} alt="" />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <div className="bg_image">
+            <img className='top_left_bg' src={imageLeft} alt="" />
+            <img className='top_right_bg' src={imageRight} alt="" />
+
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      {isOpen && ( <Modal toggleModal={toggleModal} />)};
+        <div className="container">
+        <Header />
+        <Intro />
+        <SwiperComponent toggleModal={toggleModal}  />
+        <Catalog />
+        <Calculator />
+        </div>
+    
     </div>
   )
 }

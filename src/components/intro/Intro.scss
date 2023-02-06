@@ -1,0 +1,50 @@
+.intro {
+  position: relative;
+  
+  .intro_content {
+    text-align: left;
+    max-width: 540px;
+    width: 100%;
+
+    .intro_content_title {
+      h1 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        color: #30529f;
+      }
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #212f50;
+      }
+    }
+    .intro_content_btn {
+      display: flex;
+      gap: 30px;
+      button {
+        font-family: "Century Gothic";
+        padding: 12px 42.5px;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 14px;
+        text-align: center;
+        border-radius: 8px;
+        border: none;
+        transition: 0.4s;
+      }
+      button:hover {
+        box-shadow: 0 0 10px #f39c37;
+      }
+      .btn_buy {
+        color: #f5f7fb;
+        background: #f39c37;
+      }
+      .calculator {
+        color: #30529f;
+        background: rgba(48, 82, 159, 0.2);
+      }
+    }
+  }
+}

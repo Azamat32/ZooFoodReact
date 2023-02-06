@@ -1,0 +1,137 @@
+.calculator {
+  .calculator_inner {
+    margin-top: 200px;
+    .calculator_wrap {
+      display: flex;
+      .calculator_left {
+        width: 50%;
+        .calculator_title {
+          h1 {
+            font-weight: 700;
+            font-size: 48px;
+            color: #30529f;
+            text-align: left;
+          }
+        }
+        .calculator_word {
+            max-width: 440px;
+            margin-bottom:20px;
+          p {
+            text-align: left;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #212f50;
+          }
+        }
+        .react-tabs__tab-list {
+          padding: 0px;
+          margin: 0px;
+          display: grid;
+          grid-template-columns: 100px 100px 100px 100px;
+
+          .react-tabs__tab {
+            list-style: none;
+            cursor: pointer;
+            outline: none;
+            width: 62px;
+            height: 62px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .react-tabs__tab--selected {
+            background: url("../assets/iconBg.png");
+            background-repeat: no-repeat;
+            background-size: 101%;
+            background-position-x: -2px;
+            transition: 0.2s;
+
+            svg {
+              path {
+                fill: #f9f9fc;
+                transition: 0.2s;
+              }
+            }
+          }
+        }
+        .calculator_span_content {
+          .calculator_span_header {
+            display: flex;
+            align-items: center;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 48px;
+
+            color: #30529f;
+            span {
+              outline: none;
+              user-select: none;
+              border: none;
+              color: #c9d1e6;
+            }
+            h2 {
+              font-weight: inherit;
+            }
+          }
+        }
+      }
+
+      .calculator_right {
+        width: 50%;
+        position: relative;
+        .tab_panel_blob {
+          position: absolute;
+          .tab_panel_blob_inner {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            img {
+              position: absolute;
+              z-index: -1;
+              top: -100px;
+            }
+            p {
+              z-index: 20;
+              font-family: "Century Gothic";
+              max-width: 100px;
+              text-align: left;
+              font-weight: 700;
+              font-size: 20px;
+              line-height: 24px;
+              color: #f9f9fc;
+            }
+            span {
+              font-family: "Century Gothic";
+              z-index: 20;
+              font-weight: 700;
+              font-size: 48px;
+              line-height: 48px;
+              color: #f9f9fc;
+            }
+          }
+        }
+        .green {
+            top: 90px;
+            img {
+                top: -64px !important;
+              }
+        }
+        .pink {
+          bottom: 103px;
+          left: 94px;
+          img {
+            top: -57px !important;
+          }
+        }
+
+        .purple {
+          left: 45%;
+          top: -5%;
+        }
+      }
+    }
+  }
+}

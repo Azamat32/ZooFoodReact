@@ -1,0 +1,26 @@
+.header {
+   
+    margin-bottom: 150px;
+    position: relative;
+    padding-top:55px ;
+    .header_content{
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      .header_links {
+        display: flex;
+        gap: 45px;
+        a {
+          font-weight: 700;
+          text-decoration: none;
+          font-size: 14px;
+          transition: 0.2s;
+          color: #30529f;
+        }
+        a:hover {
+            color: #F28F1B;
+          }
+      }
+    }
+  
+}

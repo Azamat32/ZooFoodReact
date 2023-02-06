@@ -1,0 +1,40 @@
+.catalog_item {
+  text-align: left;
+  .catalog_item_avatar {
+    max-width: 179px;
+    img {
+      width: 100%;
+    }
+  }
+  .catalog_item_title {
+    h1 {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      color: #30529f;
+    }
+  }
+  .catalog_item_word {
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #212f50;
+    }
+  }
+  .catalog_link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    a {
+      display: flex;
+      font-weight: 700;
+      font-size: 12px;
+      gap: 9px;
+      line-height: 24px;
+      color: rgba(48, 82, 159, 0.57);
+      text-decoration: none;
+    }
+  }
+}
