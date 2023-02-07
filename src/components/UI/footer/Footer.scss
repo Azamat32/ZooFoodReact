@@ -1,4 +1,92 @@
-.footer{
+.footer {
+  padding-bottom: 170px;
+  background: url(../../assets/butterflybg.png);
+  .footer_inner {
     max-width: 1280px;
     margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .footer_rights {
+      text-align: left;
+      h2 {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        text-transform: capitalize;
+        color: #869ac7;
+      }
+      span {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        color: #869ac7;
+        font-family: "Century Gothic";
+      }
+    }
+    .footer_words {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+      color: #869ac7;
+    }
+    .footer_links {
+      display: flex;
+      gap: 40px;
+      a {
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        img {
+          width: 70%;
+        }
+      }
+      .pink {
+        background-color: #f585a7;
+      }
+      .blue {
+        background: #99e1ef;
+      }
+      .black {
+        background: #8a9cc6;
+      }
+      .purple {
+        background: #aa89c0;
+      }
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    .footer_inner {
+      flex-direction: column;
+      align-items: center;
+      .footer_rights {
+        text-align: center;
+        h2 {
+          font-size: 16px;
+          line-height: 20px;
+        }
+        span {
+          font-size: 12px;
+          line-height: 14px;
+        }
+      }
+      .footer_words {
+        font-size: 12px;
+        line-height: 14px;
+      }
+      .footer_links {
+        gap: 20px;
+        a {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+  }
+  
 }
+
