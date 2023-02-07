@@ -2,12 +2,9 @@ import React from "react";
 import "./Calculator.scss";
 import { useState } from "react";
 import whiteChick from "../assets/whiteChiken.png";
-import pink from "../assets/pink.png";
-import purple from "../assets/purple.png";
-import green from "../assets/green.png";
-
+import TabsPanelItem from "../UI/tabspanel/TabsPanelItem";
 import arrowRight from "../assets/grouparrow.svg";
-
+import RabbitTabs from "../assets/rabbitTabs.png" 
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
 function Calculator() {
@@ -21,7 +18,6 @@ function Calculator() {
       setEdit(false);
     }
     setEdit(true);
-
   };
 
   return (
@@ -85,7 +81,7 @@ function Calculator() {
                   >
                     <path
                       fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      clipRule="evenodd"
                       class="calcForBlob"
                       d="M1.44238 15.0985C0.602007 17.4168 0.147332 19.9287 0.147332 22.5701C0.147332 34.5275 10.7055 44.5718 23.1834 44.5718C36.1412 44.5718 46.2195 35.0058 46.2195 22.5701C46.2195 20.0133 45.7367 17.5439 44.8557 15.2415C47.625 9.5285 45.7395 2.48165 45.7395 2.48165C45.7395 2.48165 41.4797 3.13479 37.5631 5.52045C33.5888 2.43645 28.5646 0.568359 23.1834 0.568359C17.5843 0.568359 12.5228 2.35447 8.57973 5.38645C4.72631 3.1103 0.626828 2.48174 0.626828 2.48174C0.626828 2.48174 -1.2274 9.41164 1.44238 15.0985ZM23.1834 32.136C16.9445 32.136 12.1453 27.8313 12.1453 22.5701C12.1453 17.3088 16.9445 13.0041 23.1834 13.0041C29.4223 13.0041 34.2215 17.3088 34.2215 22.5701C33.7416 27.8313 28.9424 32.136 23.1834 32.136ZM18.5685 24.9396C19.8504 24.9396 20.8895 23.9005 20.8895 22.6186C20.8895 21.3367 19.8504 20.2975 18.5685 20.2975C17.2866 20.2975 16.2474 21.3367 16.2474 22.6186C16.2474 23.9005 17.2866 24.9396 18.5685 24.9396ZM30.1738 22.6186C30.1738 23.9005 29.1346 24.9396 27.8528 24.9396C26.5709 24.9396 25.5317 23.9005 25.5317 22.6186C25.5317 21.3367 26.5709 20.2975 27.8528 20.2975C29.1346 20.2975 30.1738 21.3367 30.1738 22.6186Z"
                       fill="#A9B6D7"
@@ -138,7 +134,7 @@ function Calculator() {
                   >
                     <path
                       fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      clipRule="evenodd"
                       class="calcForBlob"
                       d="M40.0611 2.26544C50.0541 4.17551 59.2922 16.8797 64 24.52C60.7578 29.3174 55.4726 33.6262 49.6988 36.8245C52.2304 31.2719 52.2304 18.8787 45.5684 15.9469C49.5212 20.6999 49.3879 26.3857 46.5455 31.4052C43.2588 37.1798 37.0409 40.6891 30.3789 40.9556C29.5795 41 28.7356 41 27.9362 41C25.7155 41 23.4948 40.8667 21.3629 40.6002C22.5177 34.9144 21.052 32.338 19.8529 30.2503C19.0978 28.9177 14.6565 21.8992 10.3928 20.3445C10.3928 20.3445 5.2408 20.4334 2.30951 20.4334C1.02151 20.4334 0 21.4995 0 21.4995C0 21.4995 1.68772 14.481 10.4372 12.7042C12.4802 9.19502 16.433 5.99675 21.3629 3.15385C21.3629 3.15385 26.2484 0 36.508 0C40.9049 0 45.4351 0.621885 45.4351 0.621885L40.0611 2.26544ZM32.0222 15.858C32.9104 15.3694 33.4434 14.481 33.6211 13.5482C33.8875 12.4377 33.2657 11.3272 32.0666 10.8385C30.6453 10.1722 29.0909 10.1722 27.5364 11.5049C26.6037 12.3044 25.4934 14.1701 26.0707 14.7475C27.5808 16.2578 30.29 16.8353 32.0222 15.858Z"
                       fill="#A9B6D7"
@@ -156,9 +152,9 @@ function Calculator() {
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      clip-path="url(#clip0_319_2645)"
+                      clipPath="url(#clip0_319_2645)"
                       fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      clipRule="evenodd"
                       class="calcForBlob"
                       d="M54.3282 17.4204C52.3731 4.68521 40.2516 -0.0851651 29.1727 2.01347e-05C21.6999 2.01347e-05 15.1395 3.62039 11.881 9.62595C11.813 9.74824 11.7426 9.87343 11.6711 10.0007C11.0843 11.0451 10.4194 12.2284 10.3095 13.0851C9.67041 12.9891 8.40831 12.9096 7.62306 13.5871C6.72021 14.4722 6.47635 15.7373 7.07456 16.485C5.92503 17.0374 3.56579 18.3695 1.97521 20.6149C0.454579 23.2556 0.411133 27.6427 0.411133 27.6427C2.39865 26.4201 4.66583 25.6773 7.02452 25.5372C5.82657 30.221 3.79974 38.4604 3.79974 40.5908C3.79974 43.6148 5.58105 46 7.88371 46C10.1429 46 11.9677 43.5722 11.9677 40.5908C11.9677 38.5354 10.0267 30.5894 8.82098 25.8515C9.03603 25.9636 9.21995 26.0507 9.36112 26.1093C19.7048 32.447 25.8158 29.1447 30.0693 26.8462L30.172 26.7908C31.9098 25.8537 32.8222 30.5815 32.4747 32.6685C31.635 37.5328 29.7558 40.8521 28.1628 43.6661C27.9425 44.0553 27.7276 44.4348 27.5218 44.8074L45.5086 35.1815C51.8952 31.7741 55.4144 24.8315 54.4151 17.8037V17.6759V17.5482C54.3282 17.5056 54.3282 17.463 54.3282 17.4204ZM28.9988 11.9259C29.216 13.1611 28.1733 14.3111 26.6092 14.5667C25.0886 14.8222 22.3515 12.9481 22.3515 12.9481C22.3515 12.9481 24.3935 10.3926 25.9141 10.137C27.4347 9.88146 28.7816 10.6907 28.9988 11.9259Z"
                       fill="#A9B6D7"
@@ -177,9 +173,9 @@ function Calculator() {
                   >
                     <path
                       fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      clipRule="evenodd"
                       class="calcForBlob"
-                      clip-path="url(#clip0_330_2772)"
+                      clipPath="url(#clip0_330_2772)"
                       d="M34.2256 0.230787C40.932 -0.554928 46.1584 0.73919 49.0722 1.89465C58.5074 5.59213 70.1163 13.9577 64.5662 31.5207L39.5908 43.9997C39.5908 43.9997 43.6146 39.5165 44.2158 33.8316C44.5396 31.1047 43.9383 28.8862 43.9383 28.8862C43.9383 28.8862 38.2032 34.2938 29.9243 31.382C27.288 30.5039 23.3567 27.6384 23.3567 27.6384L17.5291 30.4115C12.164 32.861 4.90259 33.8316 0 30.5963C0 30.5963 16.0028 19.9661 19.5179 16.361C19.5276 16.3538 19.5368 16.3469 19.5455 16.3403C17.4001 13.9341 19.1041 9.84026 19.9804 8.45768C21.9229 5.36104 24.7442 3.37364 28.0743 1.89465C29.6931 1.15516 32.4681 0.415661 34.2256 0.230787ZM33.1158 13.1261C32.3758 12.895 31.7283 11.9706 31.9133 11.2311C32.0058 10.8614 32.1908 10.2143 32.9308 9.56726C33.7171 8.9202 35.0583 8.73533 35.8446 9.28995C37.2784 10.353 36.3996 12.2942 35.5209 12.8026C34.5496 13.3572 33.7171 13.311 33.1158 13.1261Z"
                       fill="#A9B6D7"
                       data-animal="goose"
@@ -190,66 +186,43 @@ function Calculator() {
               </TabList>
               <div className="calculator_span_content">
                 <div className="calculator_span_header">
+                
+                  <h2>
                   <span contentEditable={edit} onInput={handleChange}>
                     {value}
-                  </span>{" "}
-                  <h2>
-                    голов <img src={arrowRight} alt="" />{" "}
-                  </h2>{" "}
+                  </span>
+                    голов <img src={arrowRight} alt="" />
+                  </h2>
+                </div>
+                <div className="calculator_span_bottom">
+                  <h1>92 кг корма</h1>
                 </div>
               </div>
             </div>
             <div className="calculator_right">
               <TabPanel>
-                <div className="tab_panel_inner">
-                  <div className="tab_panel_blob purple">
-                    <div className="tab_panel_blob_inner">
-                      <img src={purple} alt="" />
-                      <div className="tab_panel_blob_inner_word">
-                        <span>48 кг</span>  <p>финиш {">"} 29 дней</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="tab_panel_blob green">
-                    <div className="tab_panel_blob_inner">
-                      <img src={green} alt="" />
-                      <div className="tab_panel_blob_inner_word">
-                        <span>32 кг</span> <p>рост 15-28 дней</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="tab_panel_blob pink">
-                    <div className="tab_panel_blob_inner">
-                      {" "}
-                      <img src={pink} alt="" />
-                      <div className="tab_panel_blob_inner_word">
-                        <span>12 кг</span>  <p>старат 0-14 дней</p>
-                      </div>
-                    </div>
-                  </div>
-                  <img src={whiteChick} alt="" />
-                </div>
+                <TabsPanelItem animalImg={whiteChick} />
               </TabPanel>
               <TabPanel>
-                <h2>Any content 2</h2>
+                <TabsPanelItem animalImg={RabbitTabs} />
               </TabPanel>
               <TabPanel>
-                <h2>Any content 3</h2>
+                <TabsPanelItem animalImg={whiteChick} />
               </TabPanel>
               <TabPanel>
-                <h2>Any content 4</h2>
+                <TabsPanelItem animalImg={whiteChick} />
               </TabPanel>
               <TabPanel>
-                <h2>Any content 5</h2>
+                <TabsPanelItem animalImg={whiteChick} />
               </TabPanel>
               <TabPanel>
-                <h2>Any content 6</h2>
+                <TabsPanelItem animalImg={whiteChick} />
               </TabPanel>
               <TabPanel>
-                <h2>Any content 7</h2>
+                <TabsPanelItem animalImg={whiteChick} />
               </TabPanel>
               <TabPanel>
-                <h2>Any content 8</h2>
+                <TabsPanelItem animalImg={whiteChick} />
               </TabPanel>
             </div>
           </div>

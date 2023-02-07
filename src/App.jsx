@@ -11,6 +11,10 @@ import Intro from './components/intro/Intro';
 import SwiperComponent from './components/swiperComponent/Swiper';
 import Catalog from './components/catalog/Catalog';
 import Calculator from './components/calculator/Calculator';
+import SliderAbout from './components/sliderAbout/SliderAbout';
+import YanMap from './components/yanMap/YanMap';
+import SwiperNews from './components/swiperNews/SwiperNews';
+import Footer from './components/UI/footer/Footer';
 function App() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -33,17 +37,21 @@ function App() {
       <div className="bg_image">
             <img className='top_left_bg' src={imageLeft} alt="" />
             <img className='top_right_bg' src={imageRight} alt="" />
-
       </div>
-      {isOpen && ( <Modal toggleModal={toggleModal} />)};
+      {isOpen && ( <Modal toggleModal={toggleModal} />)}
         <div className="container">
         <Header />
         <Intro />
         <SwiperComponent toggleModal={toggleModal}  />
         <Catalog />
         <Calculator />
+        <SliderAbout />
+        <YanMap />
+
+        <SwiperNews />
+
+        <Footer />
         </div>
-    
     </div>
   )
 }

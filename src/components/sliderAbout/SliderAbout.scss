@@ -1,0 +1,101 @@
+.slider_about {
+  max-width: 1280px;
+  margin: 0 auto;
+  .slider_about_inner {
+    display: flex;
+    .slider_about_left {
+      width: 50%;
+      .swiper {
+        .swiper-wrapper {
+        }
+        .swiper-pagination {
+          .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+            top: 10px;bottom: auto;
+            height:18px;
+            left: 23px;
+          }
+          .swiper-pagination-bullet{
+            width: 12.46px;
+            height: 12.46px;
+            background: #E6EBF4;    
+            transition: 0.3s;
+            opacity: 1;
+          }
+          .swiper-pagination-bullet-active{
+            background: #30529F;
+          }
+          .swiper-pagination-bullet-active:hover{
+            background: #30529F !important;
+          }
+          .swiper-pagination-bullet:hover{
+            transform: scale(1.5);
+            background: #A9B6D7;
+          }
+          
+        }
+      }
+    }
+    .slider_about_right {
+      width: 50%;
+      text-align: left;
+      .slider_about_right_title {
+        h1 {
+          font-weight: 700;
+          font-size: 36px;
+          color: #30529f;
+          margin-bottom: 25px;
+        }
+      }
+      .slider_about_right_words {
+        p {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: #212f50;
+        }
+      }
+      .slider_about_right_items {
+        display: flex;
+        gap: 30px;
+        margin-top: 30px;
+        .slider_about_right_item {
+          text-align: left;
+          h1 {
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 48px;
+            color: #f28f1b;
+            margin: 0;
+          }
+          span {
+            font-weight: 700;
+            font-size: 20px;
+            font-family: "Century Gothic";
+            line-height: 24px;
+            color: #f28f1b;
+          }
+        }
+      }
+      .slider_about_right_link {
+        margin-top: 40px;
+        a {
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 24px;
+          /* or 171% */
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          color: #869ac7;
+          img{
+            margin-right: 7px;
+          }
+          span{
+            margin-left: 6px;
+          }
+          
+        }
+      }
+    }
+  }
+}

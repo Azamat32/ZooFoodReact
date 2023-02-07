@@ -1,0 +1,54 @@
+.tab_panel_inner{
+  .animal{
+    transition: 0.3s;
+  }
+    .tab_panel_blob {
+        position: absolute;
+        .tab_panel_blob_inner {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          img {
+            position: absolute;
+            z-index: -1;
+            top: -100px;
+          }
+          p {
+            z-index: 20;
+            font-family: "Century Gothic";
+            max-width: 100px;
+            text-align: left;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            color: #f9f9fc;
+          }
+          span {
+            font-family: "Century Gothic";
+            z-index: 20;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 48px;
+            color: #f9f9fc;
+          }
+        }
+      }
+      .green {
+          top: 90px;
+          img {
+              top: -64px !important;
+            }
+      }
+      .pink {
+        bottom: 103px;
+        left: 94px;
+        img {
+          top: -57px !important;
+        }
+      }
+
+      .purple {
+        left: 45%;
+        top: -5%;
+      }
+}

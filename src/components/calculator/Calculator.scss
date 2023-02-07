@@ -1,4 +1,6 @@
 .calculator {
+  max-width: 1280px;
+  margin: 0 auto;
   .calculator_inner {
     margin-top: 200px;
     .calculator_wrap {
@@ -14,8 +16,8 @@
           }
         }
         .calculator_word {
-            max-width: 440px;
-            margin-bottom:20px;
+          max-width: 440px;
+          margin-bottom: 20px;
           p {
             text-align: left;
             font-weight: 400;
@@ -29,7 +31,7 @@
           margin: 0px;
           display: grid;
           grid-template-columns: 100px 100px 100px 100px;
-
+          margin-bottom: 50px;
           .react-tabs__tab {
             list-style: none;
             cursor: pointer;
@@ -66,14 +68,28 @@
             line-height: 48px;
 
             color: #30529f;
-            span {
-              outline: none;
-              user-select: none;
-              border: none;
-              color: #c9d1e6;
-            }
+           
             h2 {
               font-weight: inherit;
+              font-size: inherit;
+              margin: 0;
+              span {
+                outline: none;
+                user-select: none;
+            font-size: 64px;
+                margin-right: 15px;
+                border: none;
+                color: #c9d1e6;
+              }
+            }
+          }
+          .calculator_span_bottom {
+            h1 {
+              font-weight: 700;
+              font-size: 64px;
+              line-height: 48px;
+              text-align: left;
+              color: #30529f;
             }
           }
         }
@@ -82,55 +98,6 @@
       .calculator_right {
         width: 50%;
         position: relative;
-        .tab_panel_blob {
-          position: absolute;
-          .tab_panel_blob_inner {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            img {
-              position: absolute;
-              z-index: -1;
-              top: -100px;
-            }
-            p {
-              z-index: 20;
-              font-family: "Century Gothic";
-              max-width: 100px;
-              text-align: left;
-              font-weight: 700;
-              font-size: 20px;
-              line-height: 24px;
-              color: #f9f9fc;
-            }
-            span {
-              font-family: "Century Gothic";
-              z-index: 20;
-              font-weight: 700;
-              font-size: 48px;
-              line-height: 48px;
-              color: #f9f9fc;
-            }
-          }
-        }
-        .green {
-            top: 90px;
-            img {
-                top: -64px !important;
-              }
-        }
-        .pink {
-          bottom: 103px;
-          left: 94px;
-          img {
-            top: -57px !important;
-          }
-        }
-
-        .purple {
-          left: 45%;
-          top: -5%;
-        }
       }
     }
   }
